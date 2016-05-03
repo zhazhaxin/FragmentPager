@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="cn.alien95.fragmentpagerlibrary.MainActivity">
+
+    <cn.alien95.view.FragmentPager
+        android:id="@+id/fragment_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tab_background="#FF7DD654"/>
+
+</RelativeLayout>
