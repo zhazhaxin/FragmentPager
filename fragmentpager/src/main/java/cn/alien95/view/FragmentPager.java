@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -52,7 +51,7 @@ public class FragmentPager extends ViewGroup {
     }
 
     public void initView() {
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.view_fragment_pager, this, true);
+        View view = inflate(getContext(), R.layout.view_fragment_pager, this);
         tabLayout = (TabLayout) view.findViewById(R.id.$_tab);
         viewPager = (ViewPager) view.findViewById(R.id.$_view_pager);
         if (background != -1 && backgroundIsColor) {
