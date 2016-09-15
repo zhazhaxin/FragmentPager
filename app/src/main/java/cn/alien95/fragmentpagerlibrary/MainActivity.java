@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentPager = (FragmentPager) findViewById(R.id.fragment_pager);
         fragmentPager.setFragmentManager(getSupportFragmentManager());
         fragmentPager.setTitles("ONE","TWO","THREE","FOUR","FIVE","SIX");
-        fragmentPager.addFragments(new TestFragment(),new TestFragment(),new TestFragment());
+        fragmentPager.addFragment(new TestFragment(),new TestFragment(),new TestFragment());
 
         fragmentPager.getTabLayout();
 

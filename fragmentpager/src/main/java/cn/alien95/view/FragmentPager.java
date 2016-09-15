@@ -88,21 +88,14 @@ public class FragmentPager extends ViewGroup {
         tabLayout.setTabMode(mode);
     }
 
-    public void addFragment(Fragment fragment) {
-        if (adapter == null) {
-            throw new RuntimeException("No set FragmentManager , adapter == null");
-        }
-        adapter.add(fragment);
-    }
-
-    public void addFragments(List<Fragment> fragmentList) {
+    public void addFragment(List<Fragment> fragmentList) {
         if (adapter == null) {
             throw new RuntimeException("No set FragmentManager , adapter == null");
         }
         adapter.addAll(fragmentList);
     }
 
-    public void addFragments(Fragment... fragments) {
+    public void addFragment(Fragment... fragments) {
         if (adapter == null) {
             throw new RuntimeException("No set FragmentManager , adapter == null");
         }
