@@ -2,7 +2,7 @@
 
 gradle依赖
 
-```java
+```
     compile 'cn.alien95:fragmentpager:0.1.0'
 ```
 
@@ -22,16 +22,16 @@ xml布局文件
 
 java代码
 
-```java
+```
   fragmentPager = (FragmentPager) findViewById(R.id.fragment_pager);
   fragmentPager.setFragmentManager(getSupportFragmentManager());
   fragmentPager.setTitles("ONE","TWO","THREE","FOUR","FIVE","SIX");
-  fragmentPager.addFragments(new TestFragment(),new TestFragment(),new TestFragment());
+  fragmentPager.addFragment(new TestFragment(),new TestFragment(),new TestFragment());
 ```
 
 如果要对TableLayout进行相关的设置
 
-```java
+```
   fragmentPager.getTabLayout();   //获取到TableLayout
 ```
 
@@ -39,7 +39,7 @@ java代码
 
 如果不需要TableLayout，你可以直接使用BaseAdapter来实现Fragment & ViewPager
 
-```java
+```
   adapter = new BaseAdapter(fragmentManager);
   viewPager.setAdapter(adapter);
 ```
